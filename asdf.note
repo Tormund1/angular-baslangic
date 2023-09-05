@@ -1,0 +1,4 @@
+
+Component oluşturma{
+  ng g c 'componentadi'
+}
