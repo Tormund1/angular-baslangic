@@ -1,1 +1,15 @@
-<p>servers works!</p>
+<input
+type="text"
+class="form-control"
+[(ngModel)]="serverName"
+>
+<button
+class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onCreateServer()"
+>
+Server Ekle
+</button>
+<p *ngIf="serverCreated">Server oluşturuldu, server adı: {{ serverName }}</p>
+<p [innerText]="allowNewServer"></p>
+<app-server></app-server>
